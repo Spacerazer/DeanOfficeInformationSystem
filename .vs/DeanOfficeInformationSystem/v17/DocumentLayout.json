@@ -1,34 +1,14 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\desktop\\deanofficeinformationsystem\\deanofficeinformationsystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\desktop\\deanofficeinformationsystem\\deanofficeinformationsystem\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-  "WorkspaceRootPath": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\source\\repos\\deanofficeinformationsystem\\deanofficeinformationsystem\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\source\\repos\\deanofficeinformationsystem\\deanofficeinformationsystem\\employeestablecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\employeestablecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\source\\repos\\deanofficeinformationsystem\\deanofficeinformationsystem\\studentstablecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\studentstablecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\source\\repos\\deanofficeinformationsystem\\deanofficeinformationsystem\\addeditstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\addeditstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\source\\repos\\deanofficeinformationsystem\\deanofficeinformationsystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
->>>>>>> fbb809c5eba5a89662f0048366e6ba85c7489ad5
     }
   ],
   "DocumentGroupContainers": [
@@ -38,87 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\MainWindow.xaml.cs",
+              "RelativeToolTip": "DeanOfficeInformationSystem\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T19:17:06.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DatabaseService.cs",
               "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\DatabaseService.cs",
               "ToolTip": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DatabaseService.cs",
               "RelativeToolTip": "DeanOfficeInformationSystem\\DatabaseService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T10:06:52.576Z",
               "EditorCaption": ""
-=======
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeesTableControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\EmployeesTableControl.xaml.cs",
-              "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\EmployeesTableControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\EmployeesTableControl.xaml.cs",
-              "RelativeToolTip": "DeanOfficeInformationSystem\\EmployeesTableControl.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T10:39:22.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentsTableControl.xaml",
-              "DocumentMoniker": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\StudentsTableControl.xaml",
-              "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\StudentsTableControl.xaml",
-              "ToolTip": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\StudentsTableControl.xaml",
-              "RelativeToolTip": "DeanOfficeInformationSystem\\StudentsTableControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-20T10:37:20.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseService.cs",
-              "DocumentMoniker": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DatabaseService.cs",
-              "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\DatabaseService.cs",
-              "ToolTip": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DatabaseService.cs",
-              "RelativeToolTip": "DeanOfficeInformationSystem\\DatabaseService.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAowF4AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T10:06:52.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddEditStudentWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\AddEditStudentWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\AddEditStudentWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\AddEditStudentWindow.xaml.cs",
-              "RelativeToolTip": "DeanOfficeInformationSystem\\AddEditStudentWindow.xaml.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T10:43:59.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\MainWindow.xaml",
-              "RelativeToolTip": "DeanOfficeInformationSystem\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-20T09:30:41.633Z",
-              "EditorCaption": ""
->>>>>>> fbb809c5eba5a89662f0048366e6ba85c7489ad5
             }
           ]
         }
