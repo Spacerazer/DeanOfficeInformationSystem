@@ -21,14 +21,11 @@ namespace DeanOfficeInformationSystem
         {
             InitializeComponent();
 
-            // Инициализация сервиса для работы с БД
             dbService = new DatabaseService();
 
-            // Инициализация UserControl'ов для таблиц
             studentsControl = new StudentsTableControl();
             employeesControl = new EmployeesTableControl();
 
-            // По умолчанию показываем таблицу студентов
             tableContentControl.Content = studentsControl;
             tableTitle.Text = "Студенты";
             LoadStudentsData();

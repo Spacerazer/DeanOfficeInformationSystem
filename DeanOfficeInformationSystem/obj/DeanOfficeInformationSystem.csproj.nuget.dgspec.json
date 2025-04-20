@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj": {}
+    "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj": {
+    "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj",
         "projectName": "DeanOfficeInformationSystem",
-        "projectPath": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj",
+        "projectPath": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj",
         "packagesPath": "C:\\Users\\Spacerazer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\obj\\",
+        "outputPath": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

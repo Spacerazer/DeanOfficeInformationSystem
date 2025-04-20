@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w7yFoogVzQw=",
+  "dgSpecHash": "acI6ku5wzJk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Spacerazer\\source\\repos\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj",
+  "projectFilePath": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Spacerazer\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Spacerazer\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

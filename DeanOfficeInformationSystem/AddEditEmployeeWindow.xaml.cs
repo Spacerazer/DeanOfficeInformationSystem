@@ -19,7 +19,6 @@ namespace DeanOfficeInformationSystem
         public DatabaseService.Employee Employee { get; private set; }
         private bool isEditing = false;
 
-        // Конструктор для добавления нового сотрудника
         public AddEditEmployeeWindow()
         {
             InitializeComponent();
@@ -28,7 +27,6 @@ namespace DeanOfficeInformationSystem
             Title = "Добавление сотрудника";
         }
 
-        // Конструктор для редактирования существующего сотрудника
         public AddEditEmployeeWindow(DatabaseService.Employee employee)
         {
             InitializeComponent();
@@ -59,7 +57,6 @@ namespace DeanOfficeInformationSystem
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            // Проверка обязательных полей
             if (string.IsNullOrWhiteSpace(txtLastName.Text) ||
                 string.IsNullOrWhiteSpace(txtFirstName.Text) ||
                 string.IsNullOrWhiteSpace(txtPosition.Text) ||
@@ -70,7 +67,6 @@ namespace DeanOfficeInformationSystem
                 return;
             }
 
-            // Проверка формата email
             if (!string.IsNullOrWhiteSpace(txtEmail.Text) && !IsValidEmail(txtEmail.Text))
             {
                 MessageBox.Show("Пожалуйста, введите корректный email.",
@@ -78,7 +74,6 @@ namespace DeanOfficeInformationSystem
                 return;
             }
 
-            // Обновляем данные сотрудника
             Employee.LastName = txtLastName.Text.Trim();
             Employee.FirstName = txtFirstName.Text.Trim();
             Employee.MiddleName = txtMiddleName.Text.Trim();
@@ -97,7 +92,6 @@ namespace DeanOfficeInformationSystem
             Close();
         }
 
-        // Проверка формата email
         private bool IsValidEmail(string email)
         {
             try

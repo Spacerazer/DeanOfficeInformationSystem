@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|c:\\users\\spacerazer\\desktop\\deanofficeinformationsystem\\deanofficeinformationsystem\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC3D45A-E74D-450A-AA8D-88CC88E51769}|DeanOfficeInformationSystem\\DeanOfficeInformationSystem.csproj|solutionrelative:deanofficeinformationsystem\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "DeanOfficeInformationSystem\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\Spacerazer\\Desktop\\DeanOfficeInformationSystem\\DeanOfficeInformationSystem\\DatabaseService.cs",
+              "RelativeToolTip": "DeanOfficeInformationSystem\\DatabaseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T10:06:52.576Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

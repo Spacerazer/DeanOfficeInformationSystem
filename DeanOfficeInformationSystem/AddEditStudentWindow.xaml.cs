@@ -19,7 +19,6 @@ namespace DeanOfficeInformationSystem
         public DatabaseService.Student Student { get; private set; }
         private bool isEditing = false;
 
-        // Конструктор для добавления нового студента
         public AddEditStudentWindow()
         {
             InitializeComponent();
@@ -29,7 +28,6 @@ namespace DeanOfficeInformationSystem
             cmbCourse.SelectedIndex = 0;
         }
 
-        // Конструктор для редактирования существующего студента
         public AddEditStudentWindow(DatabaseService.Student student)
         {
             InitializeComponent();
@@ -58,7 +56,6 @@ namespace DeanOfficeInformationSystem
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            // Проверка обязательных полей
             if (string.IsNullOrWhiteSpace(txtLastName.Text) ||
                 string.IsNullOrWhiteSpace(txtFirstName.Text) ||
                 string.IsNullOrWhiteSpace(txtGroup.Text))
@@ -68,7 +65,6 @@ namespace DeanOfficeInformationSystem
                 return;
             }
 
-            // Обновляем данные студента
             Student.LastName = txtLastName.Text.Trim();
             Student.FirstName = txtFirstName.Text.Trim();
             Student.MiddleName = txtMiddleName.Text.Trim();
