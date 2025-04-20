@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="DeanOfficeInformationSystem.EmployeesTableControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DeanOfficeInformationSystem"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <DataGrid x:Name="employeesDataGrid" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True" 
+                  SelectionMode="Single"
+                  AlternatingRowBackground="#F5F9FF"
+                  SelectionChanged="employeesDataGrid_SelectionChanged"
+                  BorderBrush="#6E8BAD"
+                  RowBackground="#FFFFFF">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="120"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="120"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding MiddleName}" Width="120"/>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Position}" Width="120"/>
+                <DataGridTextColumn Header="Кафедра" Binding="{Binding Department}" Width="150"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" Width="100"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
