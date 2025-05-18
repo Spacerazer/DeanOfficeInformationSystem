@@ -91,6 +91,7 @@
 
                 <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
                     <Button x:Name="btnStudents" Content="Студенты" Style="{StaticResource MenuButton}" Click="btnStudents_Click"/>
+                    <Button x:Name="btnGroups" Content="Учебные группы" Style="{StaticResource MenuButton}" Click="btnGroups_Click"/>
                     <Button x:Name="btnEmployees" Content="Сотрудники" Style="{StaticResource MenuButton}" Click="btnEmployees_Click"/>
                 </StackPanel>
             </Grid>

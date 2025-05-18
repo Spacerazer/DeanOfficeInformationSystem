@@ -1,4 +1,4 @@
-﻿using System.Text;
+﻿using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,6 +15,7 @@ namespace DeanOfficeInformationSystem
     {
         private StudentsTableControl studentsControl;
         private EmployeesTableControl employeesControl;
+        private StudyGroupsTableControl groupsControl;
         private DatabaseService dbService;
 
         public MainWindow()
@@ -25,6 +26,7 @@ namespace DeanOfficeInformationSystem
 
             studentsControl = new StudentsTableControl();
             employeesControl = new EmployeesTableControl();
+            groupsControl = new StudyGroupsTableControl();
 
             tableContentControl.Content = studentsControl;
             tableTitle.Text = "Студенты";
@@ -43,6 +45,13 @@ namespace DeanOfficeInformationSystem
             tableContentControl.Content = employeesControl;
             tableTitle.Text = "Сотрудники";
             LoadEmployeesData();
+        }
+
+        private void btnGroups_Click(object sender, RoutedEventArgs e)
+        {
+            tableContentControl.Content = groupsControl;
+            tableTitle.Text = "Учебные группы";
+            LoadGroupsData();
         }
 
         private void LoadStudentsData()
@@ -69,6 +78,18 @@ namespace DeanOfficeInformationSystem
             }
         }
 
+        private void LoadGroupsData()
+        {
+            try
+            {
+                groupsControl.LoadData(dbService.GetAllStudyGroups());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка загрузки данных учебных групп: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             if (tableContentControl.Content == studentsControl)
@@ -87,6 +108,15 @@ namespace DeanOfficeInformationSystem
                 {
                     dbService.AddEmployee(addEmployeeWindow.Employee);
                     LoadEmployeesData();
+                }
+            }
+            else if (tableContentControl.Content == groupsControl)
+            {
+                var addGroupWindow = new AddEditStudyGroupWindow();
+                if (addGroupWindow.ShowDialog() == true)
+                {
+                    dbService.AddStudyGroup(addGroupWindow.StudyGroup);
+                    LoadGroupsData();
                 }
             }
         }
@@ -127,6 +157,23 @@ namespace DeanOfficeInformationSystem
                     MessageBox.Show("Выберите сотрудника для редактирования", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
+            else if (tableContentControl.Content == groupsControl)
+            {
+                var selectedGroup = groupsControl.SelectedGroup;
+                if (selectedGroup != null)
+                {
+                    var editGroupWindow = new AddEditStudyGroupWindow(selectedGroup);
+                    if (editGroupWindow.ShowDialog() == true)
+                    {
+                        dbService.UpdateStudyGroup(editGroupWindow.StudyGroup);
+                        LoadGroupsData();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Выберите группу для редактирования", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -165,6 +212,23 @@ namespace DeanOfficeInformationSystem
                     MessageBox.Show("Выберите сотрудника для удаления", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
+            else if (tableContentControl.Content == groupsControl)
+            {
+                var selectedGroup = groupsControl.SelectedGroup;
+                if (selectedGroup != null)
+                {
+                    if (MessageBox.Show($"Вы уверены, что хотите удалить группу {selectedGroup.GroupName}?",
+                        "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    {
+                        dbService.DeleteStudyGroup(selectedGroup.Id);
+                        LoadGroupsData();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Выберите группу для удаления", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
         }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
@@ -176,6 +240,10 @@ namespace DeanOfficeInformationSystem
             else if (tableContentControl.Content == employeesControl)
             {
                 LoadEmployeesData();
+            }
+            else if (tableContentControl.Content == groupsControl)
+            {
+                LoadGroupsData();
             }
         }
     }
