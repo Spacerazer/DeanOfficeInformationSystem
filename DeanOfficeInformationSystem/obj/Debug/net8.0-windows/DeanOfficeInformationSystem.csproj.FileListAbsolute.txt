@@ -163,3 +163,8 @@ C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSys
 C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\obj\Debug\net8.0-windows\DeanOfficeInformationSystem.pdb
 C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\obj\Debug\net8.0-windows\DeanOfficeInformationSystem.genruntimeconfig.cache
 C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\obj\Debug\net8.0-windows\ref\DeanOfficeInformationSystem.dll
+C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\bin\Debug\net8.0-windows\CreateDatabase.sql
+C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\obj\Debug\net8.0-windows\AddEditStudyGroupWindow.g.cs
+C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\obj\Debug\net8.0-windows\StudyGroupsTableControl.g.cs
+C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\obj\Debug\net8.0-windows\AddEditStudyGroupWindow.baml
+C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\obj\Debug\net8.0-windows\StudyGroupsTableControl.baml

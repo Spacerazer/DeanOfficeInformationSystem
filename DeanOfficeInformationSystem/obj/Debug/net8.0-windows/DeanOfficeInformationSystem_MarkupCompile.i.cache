@@ -8,13 +8,13 @@ C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSys
 DeanOfficeInformationSystem
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Spacerazer\Desktop\DeanOfficeInformationSystem\DeanOfficeInformationSystem\App.xaml
-5-1996508129
+71816268436
 
-11366464014
-2162010573605
-AddEditEmployeeWindow.xaml;AddEditStudentWindow.xaml;EmployeesTableControl.xaml;MainWindow.xaml;StudentsTableControl.xaml;
+131848975802
+216-728506514
+AddEditEmployeeWindow.xaml;AddEditStudentWindow.xaml;AddEditStudyGroupWindow.xaml;EmployeesTableControl.xaml;MainWindow.xaml;StudentsTableControl.xaml;StudyGroupsTableControl.xaml;
 
-False
+True
 
