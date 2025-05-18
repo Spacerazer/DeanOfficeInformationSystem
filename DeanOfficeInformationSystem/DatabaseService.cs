@@ -10,7 +10,7 @@ namespace DeanOfficeInformationSystem
 {
     public class DatabaseService
     {
-        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=DeanOfficeDB;Integrated Security=True";
+        private readonly string connectionString = @"Data Source=DESKTOP-6VIECO7;Initial Catalog=DeanOfficeDB;Integrated Security=True";
 
         public class Student
         {
@@ -33,6 +33,17 @@ namespace DeanOfficeInformationSystem
             public string Department { get; set; }
             public string Phone { get; set; }
             public string Email { get; set; }
+        }
+
+        public class StudyGroup
+        {
+            public int Id { get; set; }
+            public string GroupName { get; set; }
+            public int Course { get; set; }
+            public string Speciality { get; set; }
+            public int FormationYear { get; set; }
+            public int HeadmanId { get; set; }
+            public string HeadmanFullName { get; set; }
         }
 
         public List<Student> GetAllStudents()
@@ -239,6 +250,139 @@ namespace DeanOfficeInformationSystem
                     command.ExecuteNonQuery();
                 }
             }
+        }
+
+        public List<StudyGroup> GetAllStudyGroups()
+        {
+            var groups = new List<StudyGroup>();
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand(@"
+                    SELECT g.*, CONCAT(s.LastName, ' ', s.FirstName, ' ', s.MiddleName) as HeadmanFullName 
+                    FROM StudyGroup g 
+                    LEFT JOIN Student s ON g.HeadmanId = s.Id", connection))
+                {
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            groups.Add(new StudyGroup
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                GroupName = reader["GroupName"].ToString(),
+                                Course = Convert.ToInt32(reader["Course"]),
+                                Speciality = reader["Speciality"].ToString(),
+                                FormationYear = Convert.ToInt32(reader["FormationYear"]),
+                                HeadmanId = reader["HeadmanId"] != DBNull.Value ? Convert.ToInt32(reader["HeadmanId"]) : 0,
+                                HeadmanFullName = reader["HeadmanFullName"]?.ToString() ?? ""
+                            });
+                        }
+                    }
+                }
+            }
+
+            return groups;
+        }
+
+        public void AddStudyGroup(StudyGroup group)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = @"INSERT INTO StudyGroup (GroupName, Course, Speciality, FormationYear, HeadmanId) 
+                               VALUES (@GroupName, @Course, @Speciality, @FormationYear, @HeadmanId)";
+
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@GroupName", group.GroupName);
+                    command.Parameters.AddWithValue("@Course", group.Course);
+                    command.Parameters.AddWithValue("@Speciality", group.Speciality);
+                    command.Parameters.AddWithValue("@FormationYear", group.FormationYear);
+                    command.Parameters.AddWithValue("@HeadmanId", group.HeadmanId > 0 ? (object)group.HeadmanId : DBNull.Value);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void UpdateStudyGroup(StudyGroup group)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = @"UPDATE StudyGroup 
+                               SET GroupName = @GroupName,
+                                   Course = @Course,
+                                   Speciality = @Speciality,
+                                   FormationYear = @FormationYear,
+                                   HeadmanId = @HeadmanId
+                               WHERE Id = @Id";
+
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", group.Id);
+                    command.Parameters.AddWithValue("@GroupName", group.GroupName);
+                    command.Parameters.AddWithValue("@Course", group.Course);
+                    command.Parameters.AddWithValue("@Speciality", group.Speciality);
+                    command.Parameters.AddWithValue("@FormationYear", group.FormationYear);
+                    command.Parameters.AddWithValue("@HeadmanId", group.HeadmanId > 0 ? (object)group.HeadmanId : DBNull.Value);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void DeleteStudyGroup(int id)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "DELETE FROM StudyGroup WHERE Id = @Id";
+
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public List<Student> GetAvailableHeadmen()
+        {
+            var students = new List<Student>();
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand("SELECT * FROM Student", connection))
+                {
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            students.Add(new Student
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                LastName = reader["LastName"].ToString(),
+                                FirstName = reader["FirstName"].ToString(),
+                                MiddleName = reader["MiddleName"].ToString(),
+                                Group = reader["Group"].ToString(),
+                                Course = Convert.ToInt32(reader["Course"]),
+                                Speciality = reader["Speciality"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            return students;
         }
     }
 }
