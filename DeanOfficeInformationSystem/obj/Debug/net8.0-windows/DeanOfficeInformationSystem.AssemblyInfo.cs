@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeanOfficeInformationSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0233bb91da0b6ea7b4b5a7d204132f5da72b0e34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b6db9c677a7d7afed72a331bedfd64ff5f7bf96")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeanOfficeInformationSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeanOfficeInformationSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
